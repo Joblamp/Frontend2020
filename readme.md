@@ -51,7 +51,7 @@ Zonder erg diep in je code te duiken ziet het er verder goed uit, lijkt er op da
 Ik begon mijn FED opdracht met het maken van de mobiele navigatie op de homepage. Ik ga beginnen met de homepage omdat ik denk dat deze het ingewikkeldste in elkaar zit omdat er heel veel verschillende aspecten voorkomen op allerlei kleinere stukjes. De nieuws artikel page heeft meer grotere vlakken waar ik mee kan werken. 
 Het was behoorlijk lastig inkomen met het maken van de navigatie. Ik heb al drie jaar geen frontend of coderen gedaan en ik ben er ook niet bepaald thuis in. Het duurde mij twee dagen aan mijn code om een goede navigatie bar te krijgen, zonder werkend hamburger menuutje. Ik moet telkens de stof van FED doorspitten zoals: ‘Learn CSS Position In 9 Minutes’ en ‘What the Flexbox?’ Om een beetje te mijn positionering goed te krijgen. Dit lukte wel maar de logica ontbrak nog, wellicht later in het maken van de webpagina.
 
-![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/readme/nav.jpg)
+![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/readme/a4.svg)
 
 
 ## Intake (week 1)

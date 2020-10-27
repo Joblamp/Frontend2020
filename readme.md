@@ -22,19 +22,22 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 
-## Voortgang 3 (week 6)
 
--same as voortgang 1-
-
-
-
-## Voortgang 2 (week 5)
-
--same as voortgang 1-
-
-
-
-## Voortgang 1 (week 3)
+## Voortgang feedback met Sam Slotemaker
+Op het eerste oog is hij in ieder geval redelijk in orde! Qua css komt het in iedergeval goed neem ik aan. 
+Qua html ben je ook goed op weg, alleen zijn er een paar dingen die je iets anders kunt doen. Zo mist je pagina bijvoorbeeld een h1, ik zou altijd aanhouden om 1 h1 per pagina te gebruiken, zelfs als deze niet zichtbaar is: 
+https://wdn.unl.edu/page-title-h1-best-practices#:~:text=You%20can%20visually%20hide%20the,available%20to%20AT%20and%20bots.
+ 
+Let ook op het verschil tussen anchors (<a>) en buttons. Je hamburger menu is bijvoorbeeld nu een anchor, terwijl deze eigenlijk een button zou moeten zijn. een anchor verwijst naar een andere pagina, of een ander deel op de pagina (zoals een link die naar een section onderop scrollt) en een button triggert een actie, zoals in dit geval zo is bij het hamburger menu.
+ 
+Wat ik ook even zou doen, is je code door de w3 validator halen. Hiermee kun je bepaalde errors in je html spotten die zelf moeilijk te zien zijn. Zo heb je bijvoorbeeld een div tag in een ul en li tag, en heb je sommige ID's vaker gebruikt op een pagina. ID's zijn uniek, deze kun je niet hergebruiken. 
+https://validator.w3.org/nu/?doc=https%3A%2F%2Fjoblamp.github.io%2FFrontend2020%2F
+ 
+Probeer ook je css in te delen met comments, maak een enigszins logische indeling voor jezelf en anderen, scheid doormiddel van comments de header van de main content en zo voorts. 
+ 
+kleinigheidje dat ik nu nog zie, de aanmeld button zit niet in het formulier, deze is gewoon onderdeel van het formulier, normaal gesproken zou de button het formulier namelijk submitten. 
+ 
+Zonder erg diep in je code te duiken ziet het er verder goed uit, lijkt er op dat het wel goed moet komen.
 
 ### Stand van zaken
 
@@ -44,23 +47,20 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 -screenshot(s) van hoe ver je bent-
 
-### Agenda voor meeting
+#### De Navigatie
+Ik begon mijn FED opdracht met het maken van de mobiele navigatie op de homepage. Ik ga beginnen met de homepage omdat ik denk dat deze het ingewikkeldste in elkaar zit omdat er heel veel verschillende aspecten voorkomen op allerlei kleinere stukjes. De nieuws artikel page heeft meer grotere vlakken waar ik mee kan werken. 
+Het was behoorlijk lastig inkomen met het maken van de navigatie. Ik heb al drie jaar geen frontend of coderen gedaan en ik ben er ook niet bepaald thuis in. Het duurde mij twee dagen aan mijn code om een goede navigatie bar te krijgen, zonder werkend hamburger menuutje. Ik moet telkens de stof van FED doorspitten zoals: ‘Learn CSS Position In 9 Minutes’ en ‘What the Flexbox?’ Om een beetje te mijn positionering goed te krijgen. Dit lukte wel maar de logica ontbrak nog, wellicht later in het maken van de webpagina.
 
--samen met je groepje opstellen-
-
-### Verslag van meeting
-
--na afloop snel uitkomsten vastleggen-
-
+(images/nav.jpg)
 
 
 ## Intake (week 1)
 
-**Je startniveau:** Blauw
+**Mijn startniveau:** Blauw
 
-**Je focus:** Responsive
+**Mijn focus:** een extra verzorgde surface plane.
 
-**Je opdracht:** https://nos.nl/
+**Mijn opdracht:** https://nos.nl/ Homepage en nieuws artikel page
 
 **Screenshot(s):** (images/NOSmobile.png) (images/NOStablet.png) (images/NOSweb.png)
 

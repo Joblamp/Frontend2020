@@ -28,17 +28,35 @@
         color: #333;
 
     }
-   
+    
+    input, button, submit { 
+        border:none; 
+    } 
+
+    h1 {
+        position: absolute;
+        visibility: hidden;
+    }
+    
     h2 {
         margin: 0;
         font-size: 1.17em;
         font-weight: 700;
         line-height: 1.2;
         
-
-
     }
-
+    
+    a{
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: red;
+        transition-duration: ease-in;
+        
+    }
+    
+    /*Hier begint de header styling*/
     header {
         position: relative;
         background-color: ##f4f4f4;
@@ -55,16 +73,72 @@
         padding-bottom: 18px;
 
     }
-
+    
+    /*Hier begint de drop down hamburger menu*/
     nav {
         flex-grow: 1;
         width: 30px;
         height: 30px;
         display: flex;
         align-items: center;
-
+        
     }
-
+    
+    nav #myLinks {
+        display:none;
+    }
+    
+    #myLinks {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        
+        background-color: #fff;
+        width: 100%;
+        
+        padding: 0;
+        z-index: 3;
+        height: auto;
+        width: 100%;
+        padding: 0;
+        padding-right: 18px;
+        padding-left: 18px;
+        
+        left: 0;
+        margin-top: 241px;
+        
+        
+    }
+    .myLinks_lijst{
+        position: relative;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        
+    }
+    .myLinks_link{
+        display: block;
+        position: relative;
+        border-top: 1px solid #e3e3e3;
+    }
+    
+    #myLinks a{
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        
+        display: block;
+        height: 100%;
+        min-width: 5.625em;
+        margin-right: 2.77778em;
+        padding: 1.125em;
+        font-size: 16px;
+        line-height: 1.4em;
+        position: relative;
+        
+    }
+    
+    
     .drop {
         display: inline-block;
         width: 20px;
@@ -159,6 +233,7 @@
         background-size: 100% 100%;
     }
 
+    /*De voorpagina artikelen of headliners beginnen hier*/
     #headliners {
         position: relative;
         background-color: red;
@@ -171,7 +246,6 @@
 
 
     }
-
     #headliners ul {
         position: relative;
         float: left;
@@ -195,10 +269,7 @@
         min-height: 35vh;
         padding: 1.33em;
         margin-top: auto;
-
-
-
-
+    
     }
 
     .top_content {
@@ -210,7 +281,8 @@
 
 
     }
-
+    
+    /*De maak van de badges in de thumbnails*/
     .top_badge {
         background-color: #e61e14;
         color: white;
@@ -239,7 +311,7 @@
     
     .newsfoto_top1{
         background-image:
-        linear-gradient(rgba(0,0,0, .02) 40%,#000), url(https://assets.nos.nl/data/image/2020/10/21/684826/1024x576a.jpg);
+        linear-gradient(rgba(0,0,0, .02) 40%,#000), url(https://assets.nos.nl/data/image/2020/10/28/686728/384x216a.jpg);
             
         position: absolute;
         top: 0;
@@ -251,7 +323,6 @@
         background-position: 50%;
         background-size: cover;
         background-repeat: no-repeat;
-        
         
     }
     
@@ -272,6 +343,7 @@
         
     }
     
+    /*Hier begint de bouw voor de main artikelen*/
     #main {
         position: relative;
         display: flex;
@@ -300,7 +372,6 @@
         display: flex;
         align-items: center;
         padding: .89em 0;
-        text-decoration: none;
         border-bottom: 1px solid #f4f4f4;
     }
     .main_badge{
@@ -337,6 +408,7 @@
         max-width: 100%;
         z-index: 0;
     }
+    
           
     .main_h2 {
         margin: 0;
@@ -346,6 +418,7 @@
         color: #333;
     }
     
+    /*Hier begint de bouw van de aside/verschillende live kanalen*/
     #aside {
         position: relative;
     }
@@ -387,7 +460,6 @@
 
     .aside_link {
         position: relative;
-        text-decoration: none;
         width: 100%;
         height: auto;
         border: 1px solid #eaeaea;
@@ -441,6 +513,7 @@
         float: right;
     }
     
+    /*Hier is het email form stukje aangemaakt*/
     .sidebar{
         margin-bottom: 1.67em;
     }
@@ -489,7 +562,8 @@
         
 
     }
-
+    
+    /*De tips van de redactie deel wordt hier gebouwd*/
     #redactie {
         display: block;
         padding: 1rem 0;
@@ -575,10 +649,11 @@
         position: relative;
         width: 100%;
         margin-top: 0;
+        padding-right: 1em;
         color: #333;
     }
     
-    
+    /*De promotie voor andere media wordt hier gebouwd*/
     #sites {
         position: relative;
         width: 100%;
@@ -610,7 +685,6 @@
     
     .sites_link {
         position: relative;
-        text-decoration: none;
         width: 100%;
         height: auto; 
         
@@ -650,7 +724,59 @@
         
     }
     
+    .sites_top_badge2 {
+        background-color: #fb6c6c;
+        color: white;
+
+        position: relative;
+        margin-top: .75rem;
+        margin-left: .75rem;
+        display: inline-flex;
+        align-items: center;
+        padding: .46em .83em;
+        font-size: .61em;
+        font-weight: 700;
+        letter-spacing: .048em;
+        text-transform: uppercase;
+        border-radius: 1.39em;
+        height: 1.2rem;
+        
+        
+    }
+    
+    .sites_top_badge3 {
+        background-color: #783cdc;
+        color: white;
+
+        position: relative;
+        margin-top: .75rem;
+        margin-left: .75rem;
+        display: inline-flex;
+        align-items: center;
+        padding: .46em .83em;
+        font-size: .61em;
+        font-weight: 700;
+        letter-spacing: .048em;
+        text-transform: uppercase;
+        border-radius: 1.39em;
+        height: 1.2rem;
+        
+        
+    }
+    
     .sites_top_badge img{
+        position: relative;
+        height: 100%;
+        
+    }
+    
+    .sites_top_badge2 img{
+        position: relative;
+        height: 100%;
+        
+    }
+    
+    .sites_top_badge3 img{
         position: relative;
         height: 100%;
         
@@ -676,8 +802,7 @@
     
     .sites_newsfoto_top1 {
 
-        background-image:
-        linear-gradient(rgba(0,0,0, .02) 40%,#000), url(https://assets.nos.nl/data/image/2020/10/21/684836/1024x576a.jpg);
+        background-image:linear-gradient(rgba(0,0,0, .02) 40%,#000), url('https://assets.nos.nl/data/image/2020/10/07/681341/512x288a.jpg');
             
         position: absolute;
         top: 0;
@@ -694,6 +819,47 @@
         
     }
     
+    .sites_newsfoto_top2 {
+
+        background-image:
+        linear-gradient(rgba(0,0,0, .02) 40%,#000), url('https://assets.nos.nl/data/image/2020/10/24/685636/512x288a.jpg');
+            
+        position: absolute;
+        top: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 150px;
+        z-index: 0;
+        
+        background-position: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+    
+    .sites_newsfoto_top3 {
+
+        background-image:
+        linear-gradient(rgba(0,0,0, .02) 40%,#000), url(https://static.nos.nl/img/uitzendingen/presentors/nos-stories-redactie-mobiel.png);
+            
+        position: absolute;
+        top: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 150px;
+        z-index: 0;
+        
+        background-position: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+    
+    /*De footer wordt hier opgezet*/
     #footer{
         padding-top: 1.77778rem;
         background: #fafafa;
@@ -736,11 +902,9 @@
         display: block;
         font-size: .77778rem;
         color: #333;
-        text-decoration: none;
     }
     
     .footer_bottom{
-        padding: 0 1rem;
         border-top: 1px solid #e3e3e3;
         padding-top: .9em;
     }
@@ -760,8 +924,7 @@
     .cookies{
         display: block;
         margin-right: 1em;
-        margin-bottom: .5em;
-        
+        margin-bottom: .5em;        
     }
     
     .colofoon{
@@ -771,13 +934,243 @@
         
     }
     
-    .to-top{
+    /*Hier komt de styling van de news.html pagina stukken*/
+    #artikel{
+        position: relative;
+        padding: 0;
         
     }
     
-    .to-top_icoon{
+    /*Container van het hele artiekel stuk*/
+    .nieuws_artikel {
+        display: block;
         
     }
+    
+    /*Container van de kop van het artiekel stuk*/
+    .nieuws_header {
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    
+    .nieuws_foto {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 1.33em;
+        
+    }
+    .nieuws_foto img{
+        position: relative;
+        width: 100%;
+        
+    }
+    
+    .nieuws_top_content{
+        width: 100%;
+        margin: 0 auto;
+        padding-right: .89em;
+        padding-left: .89em;
+    }
+    
+    /*Container van de stukjes tekst/captions onder de image*/
+    .nieuws_captions {
+        font-size: .61em;
+        font-weight: 700;
+        line-height: 1.4;
+        text-transform: uppercase;
+        letter-spacing: .05em;
+        color: #999;
+        
+        margin-bottom: 1.33rem;    
+    }
+    
+    .span_channel {
+        color: #333; 
+    }
+    
+    .span_punt{
+        margin: 0 5px;
+    }
+    
+    
+    /*De kop/titel van het artiekel*/
+    .nieuws_titel{
+        font-size: 1.44em;
+        font-weight: 700;
+        line-height: 1.2;
+        margin: 0 0 1.33rem;
+        
+    }
+    
+    /*container van de tekst van het artiekel*/
+    .nieuws_content{
+        display: block;
+        font-size: 16px;
+    }
+    
+    .nieuws_p {
+        font-size: 1em;
+        line-height: 1.7;
+        margin-bottom: 1.4em;
+        padding: 0 1em;
+        
+    }
+    
+    .nieuws_h2{
+        font-size: 1em;
+        font-weight: 700;
+        margin-top: 0;
+        padding: 0 1em;
+
+    }
+    
+    /*container van de extra artikelen*/
+    .nieuws_linkcontainer{
+        margin: 2em 0;
+        padding: 0 1em;
+    }
+    
+    .nieuws_h3{
+        font-size: .78em;
+        font-weight: 700;
+        color: #666;
+        text-transform: uppercase;
+        
+        margin-top: .17em;
+        margin-bottom: 1.11em;
+        
+    }
+    
+    .extranieuws_lijst {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .extranieuws_artikel {
+        list-style-type: none;
+        margin-bottom: .67em;
+    }
+    
+    .extranieuws_link {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 0 0 .67em;
+        transition: color .2s;
+    }
+    
+    .extranieuws_img {
+        min-width: 80px;
+        width: 80px;
+        margin: 0 .83em 0 0;
+    }
+    
+    .extra_img {
+        width: 100%;
+    }
+    
+    .extra_titel{
+        font-size: .8em;
+        font-weight: 700;
+        line-height: 1.4;
+        color: #333;
+        transition: color .2s;
+    }
+    
+    /*container van de social en regio stempel onder het artiekel*/
+    .nieuws_footer {
+        width: 100%;
+        
+    }
+    
+    .nieuwsFooter_container{
+        margin: 0;
+        padding: 0 1em .22em;
+    }
+    
+    /*container van de social*/
+    .social{
+        margin-bottom: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        color: #333;
+        font-size: .833em;
+        line-height: 1.7;
+        
+    }
+    
+    .social_p {
+        margin: 0;
+        color: #333;
+    }
+    
+    .social_lijst {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        height: auto;
+        
+    }
+    
+    .social_keuze {
+        position: relative;
+        width: 50%;
+        height: auto;
+        list-style: none;
+        margin-bottom: 1.5em;
+        padding: 0;
+        
+    }
+    
+    .social_link {
+        color:  #333;
+        
+    }
+    
+    .social_img_wrapper{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        width: 13px;
+        height: 13px;
+        align-items: center;
+    }
+    
+    .social_img{
+        position: relative;
+        width: 100%;
+        
+    }
+    
+    .social_titel{
+        position: relative;
+        margin-left: .8em;
+
+    }
+    
+    /*container van de regio stempel*/
+    .regio_container{
+        width: 100%;
+        border-top: 1px solid #d8d8d8;
+        
+        padding: 1em 0 0;
+        margin: 0 0 2.78em;
+    }
+    
+    .regio_titel{
+        margin: 0 1em .2em 0;
+        color: #999;
+        font-size: .78em;
+    }
+    
+    .regio_img{
+        width: 122px;
+    }
+    
     
     
     

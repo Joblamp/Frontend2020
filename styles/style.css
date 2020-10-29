@@ -5,8 +5,6 @@
     box-sizing: border-box;
 }
 
-
-@media screen and (max-width: 380px) {
     html {
         font-size: 1.125em;
     }

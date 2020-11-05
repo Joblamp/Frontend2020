@@ -8,7 +8,7 @@
     html {
         font-size: 1.125em;
     }
-
+    
     body {
         background-color: #fff;
         display: flex;
@@ -30,11 +30,6 @@
     input, button, submit { 
         border:none; 
     } 
-
-    h1 {
-        position: absolute;
-        visibility: hidden;
-    }
     
     h2 {
         margin: 0;
@@ -43,7 +38,7 @@
         line-height: 1.2;
         
     }
-    
+
     a{
         text-decoration: none;
     }
@@ -61,22 +56,27 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        border-bottom: 1px solid #e3e3e3;
-        height: 66px;
+        border-bottom: 0.05em solid #e3e3e3;
+        height: 3.66em;
         width: 100%;
         padding: 0;
-        padding-right: 18px;
-        padding-left: 18px;
-        padding-top: 18px;
-        padding-bottom: 18px;
+        padding-right: 1em;
+        padding-left: 1em;
+        padding-top: 1em;
+        padding-bottom: 1em;
 
+    }
+    
+    header h1 {
+        position: absolute;
+        visibility: hidden;
     }
     
     /*Hier begint de drop down hamburger menu*/
     nav {
         flex-grow: 1;
-        width: 30px;
-        height: 30px;
+        width: 1.67em;
+        height: 1.67em;
         display: flex;
         align-items: center;
         
@@ -99,25 +99,26 @@
         height: auto;
         width: 100%;
         padding: 0;
-        padding-right: 18px;
-        padding-left: 18px;
+        padding-right: 1em;
+        padding-left: 1em;
         
         left: 0;
-        margin-top: 241px;
-        
-        
+        margin-top: 13.39em;
+               
     }
-    .myLinks_lijst{
+
+    #myLinks ul{
         position: relative;
         list-style: none;
         margin: 0;
         padding: 0;
         
     }
-    .myLinks_link{
+
+    #myLinks li{
         display: block;
         position: relative;
-        border-top: 1px solid #e3e3e3;
+        border-top: 0.05em solid #e3e3e3;
     }
     
     #myLinks a{
@@ -130,47 +131,48 @@
         min-width: 5.625em;
         margin-right: 2.77778em;
         padding: 1.125em;
-        font-size: 16px;
+        font-size: 0.89em;
         line-height: 1.4em;
         position: relative;
         
     }
     
     
-    .drop {
+    nav button {
         display: inline-block;
-        width: 20px;
-        height: 15px;
+        width: 1.5em;
+        height:1.1em;
         background: transparent url("../images/drop_nohover.png") no-repeat 0 0;
         background-size: 100% 100%;
 
 
     }
 
-    .drop:hover {
-        width: 20px;
-        height: 15px;
+    nav button:hover {
+        width: 1.5em;
+        height:1.1em;
         background: transparent url("../images/drop_hover.png") no-repeat 0 0;
         background-size: 100% 100%;
     }
 
     #logo {
         flex-grow: 4;
-        height: 30px;
+        height: 1.67em;
         position: relative;
     }
 
     #logo img {
-        height: 30px;
+        height: 1.67em;
     }
 
-    .widgets {
+    #widgets {
         flex-grow: 1;
         height: 100%;
         position: relative;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        list-style: none;
     }
 
     .verkeer {
@@ -178,22 +180,22 @@
         height: 100%;
         font-size: .77778em;
         position: relative;
-        padding-left: 11px;
-        padding-right: 11px;
+        padding-left: .7em;
+        padding-right: .7em;
     }
 
     .auto {
         display: inline-block;
-        width: 17px;
-        height: 14px;
+        width: 1.2em;
+        height: 1em;
         background: transparent url("../images/car.png") no-repeat 0 0;
         background-size: 100% 100%;
     }
 
-    .widget_info {
+    #widgets p {
         text-align: center;
         position: relative;
-        margin-top: -9px;
+        margin-top: -0.65em;
     }
 
     .weer {
@@ -201,32 +203,32 @@
         font-size: .77778em;
         text-align: center;
         position: relative;
-        padding-left: 11px;
-        padding-right: 11px;
+        padding-left: .7em;
+        padding-right: .7em;
     }
 
     .wolk {
         display: inline-block;
-        width: 21px;
-        height: 15px;
+        width: 1.5em;
+        height: 1.1em;
         background: transparent url("../images/cloud.png") no-repeat 0 0;
         background-size: 100% 100%;
 
     }
 
     .zoek {
-        height: 57px;
+        height: 3.16em;
         position: relative;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-left: 11px;
+        padding-left: .7em;
     }
 
     .search {
         display: inline-block;
-        width: 20px;
-        height: 20px;
+        width: 1.11em;
+        height: 1.11em;
         background: transparent url("../images/search.png") no-repeat 0 0;
         background-size: 100% 100%;
     }
@@ -239,7 +241,7 @@
         flex-direction: column;
         height: 100%;
         width: 100%;
-        margin-bottom: .89rem;
+        margin-bottom: .89em;
 
 
 
@@ -250,13 +252,6 @@
         width: 100%;
         margin: 0;
         padding: 0;
-
-    }
-
-    .story1 {
-        background-color: green;
-
-
 
     }
 
@@ -301,7 +296,7 @@
 
     }
 
-    .top_titel {
+    .top_content h2 {
         color: white;
         margin-top: auto;
 
@@ -351,26 +346,26 @@
         
     }
     
-    .main_group {
+    #main ul {
         position: relative;
-        margin-right: .89rem;
-        margin-left: .89rem;
-        margin-bottom: .89rem;
+        margin-right: .89em;
+        margin-left: .89em;
+        margin-bottom: .89em;
         margin-top: 0;
         padding: 0;
     }
-    .main_thumb{
+    #main li{
         position: relative;
         flex-direction: row;
         margin: 0;
         list-style-type: none;
        
     }
-    .main_link{
+    #main a{
         display: flex;
         align-items: center;
         padding: .89em 0;
-        border-bottom: 1px solid #f4f4f4;
+        border-bottom: 0.055em solid #f4f4f4;
     }
     .main_badge{
         background-color: #e61e14;
@@ -395,7 +390,7 @@
     
     .newsfoto_main{
         position: relative;
-        flex: 0 0 6.2rem;
+        flex: 0 0 6.2em;
         margin-right: .89em;
         overflow: hidden;   
     }
@@ -408,7 +403,7 @@
     }
     
           
-    .main_h2 {
+    #main h2 {
         margin: 0;
         font-size: .88em;
         font-weight: 500;
@@ -417,56 +412,56 @@
     }
     
     /*Hier begint de bouw van de aside/verschillende live kanalen*/
-    #aside {
+    aside {
         position: relative;
     }
 
-    .aside_containder {
+    aside #kanalen {
         position: relative;
         margin: 0 0 1.67em;
         padding: 0 1.125em;
 
     }
 
-    .aside_titel {
+    #kanalen h2 {
         font-size: .61111em;
+        font-weight:700;
         color: #999;
         text-transform: uppercase;
-        border-bottom: 1px solid #e3e3e3;
-        margin-top: 0;
-
-
+        border-bottom: 0.05em solid #e3e3e3;
+        margin-top: 1em;
+        
+        padding-bottom:.5em;
 
     }
 
-    .aside_lijst {
+    #kanalen ul {
         position: relative;
         list-style: none;
         margin: 0;
         padding: 0;
+        padding-bottom: .1em;
 
     }
 
-    .aside_kanaal {
+    #kanalen li {
         position: relative;
         flex-direction: row;
-        margin: 1rem 0;
-
-
-
+        margin: 1em 0;
+        
     }
 
-    .aside_link {
+    #kanalen a {
         position: relative;
         width: 100%;
         height: auto;
-        border: 1px solid #eaeaea;
+        border: .055em solid #eaeaea;
 
         display: flex;
         flex-direction: row;
         align-items: center;
         padding: .89em;
-        border-radius: .44rem;
+        border-radius: .44em;
         font-size: 1em;
 
     }
@@ -474,27 +469,27 @@
     .aside_image img {
         display: flex;
         flex: 0 0 auto;
-        max-width: 48px;
-        margin-right: .89rem;
+        max-width: 2.66em;
+        margin-right: .89em;
     }
 
-    .aside_tekst {
+    aside span {
         position: relative;
         float: left;
         width: 100%;
 
     }
 
-    .aside_h3tekst {
+    aside h3 {
         margin: 0;
         font-size: .83em;
         font-weight: 700;
         line-height: 1.11;
         letter-spacing: .02em;
-        color: #333;
+        color: #333;    
     }
 
-    .aside_ptekst {
+    span p {
         position: relative;
         margin: .75em 0 0;
         font-size: .61em;
@@ -512,18 +507,18 @@
     }
     
     /*Hier is het email form stukje aangemaakt*/
-    .sidebar{
+    #sidebar{
         margin-bottom: 1.67em;
     }
 
-    .sidep {
+    #sidebar p {
         margin-top: 1em;
         margin-bottom: 1.44444em;
         font-size: .77778em;
         line-height: 1.5;
     }
 
-    .email {
+    #email {
         position: relative;
         width: 100%;
         display: flex;
@@ -531,56 +526,47 @@
         height: auto;
     }
 
-    #email_naam {
+    #email form {
         position: relative;
         display: flex;
         width: 100%;
 
     }
 
-    #email_naam input {
+    #email input {
         width: 100%;
         position: relative;
-        padding: 6px 80px 8px 16px;
-        border: 1px solid #d8d8d8;
-        border-radius: 20px;
+        padding: 0.45em 5em 0.58em 1.14em;
+        border: .055em solid #d8d8d8;
+        border-radius: 1.25em;
         font-size: .77778em;
 
     }
 
-    .email_button {
+    #email button {
         position: absolute;
-        padding: 8px 16px;
+        padding: 0.58em 1.14em;
         border: none;
         background-color: #e61e14;
-        border-radius: 20px;
+        border-radius: 1.25em;
         font-size: .77778em;
         color: #fff;
         right: 0;
         
-
     }
     
     /*De tips van de redactie deel wordt hier gebouwd*/
     #redactie {
         display: block;
-        padding: 1rem 0;
+        padding: 1em 0;
         
 
     }
     
-    redactie_container {
-        position: relative;
-        width: auto;
-        max-width: 66.6em;
-        margin: 0 auto;
-
-    }
-    
-    .redactie_container h2 {
-        padding: .44rem 1rem .55rem;
-        font-size: .944rem;
-        line-height: 1.3rem;
+    #redactie h2 {
+        padding: .44em 1em .55em;
+        font-size: .944em;
+        line-height: 1.3em;
 
         display: block;
         margin-top: .5em;
@@ -588,7 +574,7 @@
 
     }
     
-    .redactie_lijst {
+    #redactie ul {
         position: relative;
         width: 100%;
         display: flex;
@@ -599,20 +585,16 @@
         
     }
     
-    .redactie_artiekel {
+    #redactie li {
         position: relative;
         width: 100%;
         margin: 0 0 3.125em;
         display: block;
     }
     
-    .redactie_artiekel2 {
-        position: relative;
-        width: 100%;
-        margin: 0 0 3.125em;
-        display: block;
+    .border {
         padding-top: .8em;
-        border-top: .05556rem solid #e3e3e3;
+        border-top: .05556em solid #e3e3e3;
     }
         
     .newsfoto_redactie {
@@ -643,29 +625,29 @@
         
     }
     
-    .redactie_p {
+    .redactie_tekst p {
         position: relative;
         width: 100%;
         margin-top: 0;
         padding-right: 1em;
         color: #333;
+
     }
+
+
     
     /*De promotie voor andere media wordt hier gebouwd*/
     #sites {
         position: relative;
         width: 100%;
         
-    }
-    
-    .sites_container {
         position: relative;
         padding-left: 1em;
         padding-right: 1em;
         
     }
     
-    .sites_lijst {
+    #sites ul {
         position: relative;
         list-style-type: none;
         display: flex;
@@ -674,24 +656,17 @@
         padding: 0;
     }
     
-    .sites_artiekel {
+    #sites li {
         position: relative;
         width: 100%;
-        height: 150px;
+        height: 8.34em;
         margin-bottom: 1.25em;
-    }
-    
-    .sites_link {
-        position: relative;
-        width: 100%;
-        height: auto; 
-        
     }
     
     .sites_wrapper {
         position: relative;
         width: 100%;
-        height: 150px;
+        height: 8.34em;
     }
     
     .sites_top_content {
@@ -780,7 +755,7 @@
         
     }
     
-    .sites_top_titel{
+    #sites h2{
         color: white;
         margin-top: auto;
         padding: .75rem;
@@ -808,7 +783,7 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        height: 150px;
+        height: 8.34em;
         z-index: 0;
         
         background-position: 50%;
@@ -828,7 +803,7 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        height: 150px;
+        height: 8.34em;
         z-index: 0;
         
         background-position: 50%;
@@ -848,7 +823,7 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        height: 150px;
+        height: 8.34em;
         z-index: 0;
         
         background-position: 50%;
@@ -858,32 +833,24 @@
     }
     
     /*De footer wordt hier opgezet*/
-    #footer{
-        padding-top: 1.77778rem;
+    footer{
+        padding-top: 1.7em;
+        padding-left: 1em;
+        padding-right: 1em;
         background: #fafafa;
-        border-top: 1px solid #e3e3e3;
+        border-top: .055em solid #e3e3e3;
         
         
     }
     
-    .footer_container{
-        padding: 0 1rem;
-        
-    }
-    
-    .footer_top{
+    #footer_wrapper{
         width: 100%;
-        margin-bottom: 1rem;
+        margin-top: 1em;
+        margin-bottom: 1em;
         
     }
     
-    .footer_wrapper{
-        width: 100%;
-        margin-bottom: 1rem;
-        
-    }
-    
-    .footer_lijst{
+    footer ul{
         display: block;
         margin: 0;
         list-style: none;
@@ -891,23 +858,23 @@
         padding: 0;
     }
     
-    .footer_optie{
+    footer li{
         margin: 0;
         padding: 0;
     }
     
-    .footer_link{
+    footer a{
         display: block;
-        font-size: .77778rem;
+        font-size: .77778em;
         color: #333;
     }
     
-    .footer_bottom{
-        border-top: 1px solid #e3e3e3;
+    #footer_bottom{
+        border-top: .055em solid #e3e3e3;
         padding-top: .9em;
     }
     
-    .footer_end{
+    #footer_bottom ul{
         padding: 0;
         color: #999;
         display: block;
@@ -919,21 +886,14 @@
         line-height: 1.5em;
     }
     
-    .cookies{
+    #footer_bottom li{
         display: block;
         margin-right: 1em;
         margin-bottom: .5em;        
     }
     
-    .colofoon{
-        display: block;
-        margin-right: 1em;
-        margin-bottom: .5em;
-        
-    }
-    
     /*Hier komt de styling van de news.html pagina stukken*/
-    #artikel{
+    article{
         position: relative;
         padding: 0;
         
@@ -946,7 +906,7 @@
     }
     
     /*Container van de kop van het artiekel stuk*/
-    .nieuws_header {
+    #nieuws_header {
         width: 100%;
         display: flex;
         flex-flow: column nowrap;
@@ -956,7 +916,7 @@
         position: relative;
         width: 100%;
         height: 100%;
-        margin-bottom: 1.33em;
+        margin-bottom: 1em;
         
     }
     .nieuws_foto img{
@@ -965,7 +925,7 @@
         
     }
     
-    .nieuws_top_content{
+    #nieuws_top_content{
         width: 100%;
         margin: 0 auto;
         padding-right: .89em;
@@ -973,7 +933,7 @@
     }
     
     /*Container van de stukjes tekst/captions onder de image*/
-    .nieuws_captions {
+    #nieuws_captions {
         font-size: .61em;
         font-weight: 700;
         line-height: 1.4;
@@ -981,7 +941,7 @@
         letter-spacing: .05em;
         color: #999;
         
-        margin-bottom: 1.33rem;    
+        margin-bottom: 1.33rem; 
     }
     
     .span_channel {
@@ -989,12 +949,12 @@
     }
     
     .span_punt{
-        margin: 0 5px;
+        margin: 0 0.46em;
     }
     
     
     /*De kop/titel van het artiekel*/
-    .nieuws_titel{
+    article h1{
         font-size: 1.44em;
         font-weight: 700;
         line-height: 1.2;
@@ -1003,12 +963,12 @@
     }
     
     /*container van de tekst van het artiekel*/
-    .nieuws_content{
+    #nieuws_content{
         display: block;
-        font-size: 16px;
+        font-size: 0.888em;
     }
     
-    .nieuws_p {
+    #nieuws_content p {
         font-size: 1em;
         line-height: 1.7;
         margin-bottom: 1.4em;
@@ -1016,7 +976,7 @@
         
     }
     
-    .nieuws_h2{
+    #nieuws_content h2{
         font-size: 1em;
         font-weight: 700;
         margin-top: 0;
@@ -1025,13 +985,13 @@
     }
     
     /*container van de extra artikelen*/
-    .nieuws_linkcontainer{
+    #nieuws_linkcontainer{
         margin: 2em 0;
         padding: 0 1em;
     }
     
-    .nieuws_h3{
-        font-size: .78em;
+    #nieuws_linkcontainer h3{
+        font-size: .68em;
         font-weight: 700;
         color: #666;
         text-transform: uppercase;
@@ -1041,17 +1001,17 @@
         
     }
     
-    .extranieuws_lijst {
+    #nieuws_linkcontainer ul {
         margin: 0;
         padding: 0;
     }
     
-    .extranieuws_artikel {
+    #nieuws_linkcontainer li { 
         list-style-type: none;
         margin-bottom: .67em;
     }
     
-    .extranieuws_link {
+    #nieuws_linkcontainer a { 
         width: 100%;
         display: flex;
         align-items: center;
@@ -1060,17 +1020,17 @@
     }
     
     .extranieuws_img {
-        min-width: 80px;
-        width: 80px;
+        min-width: 4.445em;
+        width: 4.445em;
         margin: 0 .83em 0 0;
     }
     
-    .extra_img {
+    .extranieuws_img img {
         width: 100%;
     }
     
-    .extra_titel{
-        font-size: .8em;
+    #nieuws_linkcontainer span{
+        font-size: .7em;
         font-weight: 700;
         line-height: 1.4;
         color: #333;
@@ -1078,18 +1038,14 @@
     }
     
     /*container van de social en regio stempel onder het artiekel*/
-    .nieuws_footer {
+    #nieuws_footer {
         width: 100%;
-        
-    }
-    
-    .nieuwsFooter_container{
         margin: 0;
         padding: 0 1em .22em;
     }
     
     /*container van de social*/
-    .social{
+    #social{
         margin-bottom: 2em;
         display: flex;
         flex-direction: column;
@@ -1101,12 +1057,12 @@
         
     }
     
-    .social_p {
+    #social p {
         margin: 0;
         color: #333;
     }
     
-    .social_lijst {
+    #nieuws_footer ul {
         display: flex;
         flex-wrap: wrap;
         padding: 0;
@@ -1114,7 +1070,7 @@
         
     }
     
-    .social_keuze {
+    #nieuws_footer li { 
         position: relative;
         width: 50%;
         height: auto;
@@ -1124,7 +1080,7 @@
         
     }
     
-    .social_link {
+    #nieuws_footer a {
         color:  #333;
         
     }
@@ -1133,40 +1089,40 @@
         position: relative;
         display: flex;
         flex-direction: row;
-        width: 13px;
-        height: 13px;
+        width: 0.85em;
+        height: 0.85em;
         align-items: center;
     }
     
-    .social_img{
+    .social_img_wrapper img{
         position: relative;
         width: 100%;
         
     }
     
-    .social_titel{
+    #nieuws_footer span{
         position: relative;
         margin-left: .8em;
 
     }
     
     /*container van de regio stempel*/
-    .regio_container{
+    #regio_container{
         width: 100%;
-        border-top: 1px solid #d8d8d8;
+        border-top: .055em solid #d8d8d8;
         
         padding: 1em 0 0;
         margin: 0 0 2.78em;
     }
     
-    .regio_titel{
+    #regio_container p{
         margin: 0 1em .2em 0;
         color: #999;
         font-size: .78em;
     }
     
-    .regio_img{
-        width: 122px;
+    #regio_container img{
+        width: 6.78em;
     }
     
     

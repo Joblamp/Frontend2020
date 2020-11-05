@@ -41,7 +41,25 @@ https://stackoverflow.com/questions/2941189/how-to-overlay-one-div-over-another-
 https://stackoverflow.com/questions/11278377/fixed-footer-that-wont-go-past-bottom-of-content
 
 
-## Eindgesprek (week 7/8)
+## NOV 6 Updates
+
+Opschoning: HTML
+
+Home page
+van 120+ div's - naar 84 div's
+van 160+ classes - naar 53 classes
+
+Artikel page
+Van 62 div's - naar 36 div's
+Van 121 classes - naar 23 classes
+
+Geen PX meer
+
+Alle typefouten verbeterd
+
+Sections en Spans toegevoegd
+
+Onnodige media query verwijderd
 
 
 ## Voortgang feedback met Sam Slotemaker
